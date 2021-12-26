@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_comments.xml" value="0.2171875" />
-        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable/border_color_background_transparent.xml" value="0.2703125" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable/btn_border_color_background_transparent.xml" value="0.2703125" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable/rounded_relative_layout.xml" value="0.2703125" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_feed.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_main_activitya.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/post_view.xml" value="0.264" />
+        <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/recycler_view_post.xml" value="0.4" />
       </map>
     </option>
   </component>
