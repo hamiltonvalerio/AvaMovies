@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black_header">#2B2730</color>
+    <color name="fonte_branca">#E8EAF6</color>
 
 </resources>

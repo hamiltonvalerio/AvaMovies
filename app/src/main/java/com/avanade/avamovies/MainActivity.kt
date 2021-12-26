@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.avanade.avamovies.databinding.ActivityMainBinding
 import com.avanade.avamovies.view.CommentsActivity
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
 
         setContentView(view)
+
 
 
         binding.btnComments.setOnClickListener {

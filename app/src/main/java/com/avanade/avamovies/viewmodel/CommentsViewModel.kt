@@ -1,8 +1,10 @@
 package com.avanade.avamovies.viewmodel
 
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.avanade.avamovies.model.Comment
+import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 
 class CommentsViewModel: ViewModel() {
@@ -11,9 +13,16 @@ class CommentsViewModel: ViewModel() {
     private lateinit var firestore: FirebaseFirestore
 
     init {
+
         firestore = FirebaseFirestore.getInstance()
         listenComments()
     }
+
+    //gets e sets
+    internal var getComments: MutableLiveData<ArrayList<Comment>>
+        get() {return _comments}
+        set(value) {_comments.value}
+
 
     private fun listenComments(){
         firestore.collection("comments")
@@ -35,9 +44,17 @@ class CommentsViewModel: ViewModel() {
             }
     }
 
-    //gets e sets
-    internal var getComments: MutableLiveData<ArrayList<Comment>>
-        get() {return _comments}
-        set(value) {_comments.value}
+    fun saveComment(comment: Comment){
+        comment.uid = "1"
+        comment.postId = "2"
+        comment.userId = "2"
+
+        firestore.collection("comments")
+            .add(comment)
+            .addOnSuccessListener {
+
+            }
+    }
+
 
 }
