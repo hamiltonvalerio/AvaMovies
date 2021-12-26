@@ -1,7 +1,8 @@
-package com.avanade.avamovies
+package com.avanade.avamovies.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.avanade.avamovies.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
