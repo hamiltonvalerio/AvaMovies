@@ -12,6 +12,7 @@ class CommentsViewModel: ViewModel() {
     private var _comments = MutableLiveData<ArrayList<Comment>>()
     private lateinit var firestore: FirebaseFirestore
 
+
     init {
 
         firestore = FirebaseFirestore.getInstance()
@@ -19,12 +20,15 @@ class CommentsViewModel: ViewModel() {
     }
 
     //gets e sets
+    /*internal var getCom: MutableLiveData<ArrayList<Comment>>
+        get() {return _comments}
+        set(value) {_comments.value}
+*/
     internal var getComments: MutableLiveData<ArrayList<Comment>>
         get() {return _comments}
         set(value) {_comments.value}
 
-
-    private fun listenComments(){
+    fun listenComments(){
         firestore.collection("comments")
             .addSnapshotListener { snapshot, error ->
                 if(error != null){
@@ -38,9 +42,7 @@ class CommentsViewModel: ViewModel() {
                         listaComments.add(comment!!)
                     }
                 }
-
                 _comments.value = listaComments
-
             }
     }
 

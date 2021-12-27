@@ -1,5 +1,6 @@
 package com.avanade.avamovies.adapter
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,11 +12,11 @@ import com.avanade.avamovies.R
 import com.avanade.avamovies.model.Comment
 import com.avanade.avamovies.view.CommentsFragment
 
-class CommentsAdapter(): RecyclerView.Adapter<CommentsAdapter.CommentsViewHolder>() {
+class CommentsAdapter(var context: Context): RecyclerView.Adapter<CommentsAdapter.CommentsViewHolder>() {
 
     private var commentsList = emptyList<Comment>()
 
-    fun updateLista(lista: List<Comment>){
+    fun update(lista: List<Comment>){
         commentsList = lista
         notifyDataSetChanged()
     }
