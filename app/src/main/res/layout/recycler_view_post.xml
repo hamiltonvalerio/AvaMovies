@@ -93,16 +93,18 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/rv_post_curtir"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:text="X"
+                    android:paddingLeft="12dp"
+                    app:icon="@drawable/ic_add"
+                    android:textColor="#fff"
                     style="?attr/materialButtonOutlinedStyle"
                     android:layout_marginRight="5dp"
-                    app:strokeColor="#444048"
-                    android:textColor="#BB86FC"
-                    />
+                    app:strokeColor="#444048" />
 
                 <Button
+                    android:id="@+id/rv_post_comentar"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Comentar"

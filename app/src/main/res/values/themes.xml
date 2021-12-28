@@ -21,19 +21,16 @@
         <item name="boxStrokeWidth">2dp</item>
     </style>
 
-    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
-        <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">@color/purple_200</item>
+<!--    <style name="Theme.Ligth" parent="Theme.AppCompat.Light">-->
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorPrimaryDark">@color/purple_500</item>-->
+<!--        <item name="colorAccent">#f00</item>-->
+<!--    </style>-->
 
-        <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">@color/purple_500</item>
-
-        <!-- colorAccent is used as the default value for colorControlActivated,
-             which is used to tint widgets -->
-        <item name="colorAccent">#f00</item>
-
-        <!-- You can also set colorControlNormal, colorControlActivated
-             colorControlHighlight, and colorSwitchThumbNormal. -->
-
+    <style name="Theme.DarkActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">#121212</item>
+        <item name="colorAccent">#121212</item>
     </style>
+
 </resources>

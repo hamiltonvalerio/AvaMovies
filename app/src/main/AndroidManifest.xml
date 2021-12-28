@@ -9,23 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AvaMovies">
+
         <activity
             android:name=".view.NewPostActivity"
-            android:exported="true" >
+            android:exported="false"
+            android:label="Nova Postagem"
+            android:parentActivityName=".view.FeedActivity">
+
+        </activity>
+
+        <activity
+            android:name=".view.FeedActivity"
+            android:exported="true"
+            android:label=""
+            android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.FeedActivity"
-            android:exported="true">
 
-        </activity>
         <activity
             android:name=".view.MainActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>
