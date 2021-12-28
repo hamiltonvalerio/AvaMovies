@@ -14,6 +14,15 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <activity
+            android:name=".view.LoginActivity"
+            android:exported="true">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".view.NewPostActivity"
             android:exported="false"
             android:label="Nova Postagem"
@@ -22,24 +31,17 @@
 
         <activity
             android:name=".view.CommentsActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"/>
 
         <activity
             android:name=".view.FeedActivity"
-            android:exported="true"
+            android:exported="false"
             android:label=""
-            android:launchMode="singleTop" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:launchMode="singleTop"/>
 
         <activity
             android:name=".view.MainActivity"
-            android:exported="false" />
+            android:exported="false"/>
 
     </application>
 
