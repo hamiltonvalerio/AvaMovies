@@ -30,7 +30,6 @@
             android:src="@drawable/ic_baseline_upload_24" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/new_post_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
@@ -38,13 +37,13 @@
             style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_post_title"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:textColor="#6c6c6c" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/new_post_movie_name"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginVertical="10dp"
@@ -52,13 +51,13 @@
             style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_post_movie_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#6c6c6c" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/new_post_movie_named"
             style="@style/TextInputLayoutStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,6 +66,7 @@
             android:hint="Resenha ou crítica">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_post_movie_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="100dp"
@@ -94,7 +94,9 @@
             android:background="#2e2e2e"
             android:padding="10dp"
             android:orientation="horizontal">
+
             <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/new_post_has_spoiler"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:checked="true"
@@ -106,7 +108,9 @@
                 android:text="Possui spoiler"
                 android:textColor="#6c6c6c"
                 android:layout_marginRight="10dp" />
+
             <Button
+                android:id="@+id/new_post_publish"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="Publicar"
@@ -117,9 +121,6 @@
                 android:textColor="#BB86FC" />
 
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </RelativeLayout>

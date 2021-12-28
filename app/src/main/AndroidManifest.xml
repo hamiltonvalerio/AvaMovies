@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AvaMovies" >
 
-        <activity android:name=".view.SignupActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
         <activity
             android:name=".view.LoginActivity"
             android:exported="true">
@@ -21,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".view.SignupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="Nova Conta"
+            android:parentActivityName=".view.LoginActivity"/>
 
         <activity
             android:name=".view.NewPostActivity"
@@ -38,10 +40,6 @@
             android:exported="false"
             android:label=""
             android:launchMode="singleTop"/>
-
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="false"/>
 
     </application>
 
