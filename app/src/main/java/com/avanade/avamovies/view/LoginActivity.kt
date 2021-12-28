@@ -3,19 +3,20 @@ package com.avanade.avamovies.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.avanade.avamovies.R
-/*import com.avanade.avamovies.databiding.ActivityLoginBiding*/
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.android.gms.tasks.OnFailureListener
+//import com.avanade.avamovies.databiding.ActivityLoginBiding
+//import com.google.android.gms.tasks.OnCompleteListener
+//import com.google.android.gms.tasks.OnFailureListener
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.internal.api.FirebaseNoSignedInUserException
-import com.google.firebase.ktx.Firebase
-import java.lang.Exception
+//import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+//import com.google.firebase.internal.api.FirebaseNoSignedInUserException
+//import com.google.firebase.ktx.Firebase
+//import java.lang.Exception
 
 class LoginActivity : AppCompatActivity() {
   /*lateinit var binding: ActivityLoginBinding*/
@@ -38,12 +39,13 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
         FirebaseAuth.getInstance().signInWithEmailAndPassword(editEmail.text.toString(), editSenha.text.toString())
             .addOnSuccessListener {
-                Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show()
                 val feed = Intent(this, FeedActivity::class.java)
                 startActivity(feed)
             }
             .addOnFailureListener {
-                Toast.makeText(this, "Falha na Matrix! ${it.message!!}", Toast.LENGTH_SHORT).show()
+                Log.i("Login", it.message!!)
+                Toast.makeText(this, "Falha na Matrix! Sua senha pode estar errada ou o usuário não existe!", Toast.LENGTH_SHORT).show()
             }
     }
 
@@ -61,9 +63,9 @@ override fun onCreate(savedInstanceState: Bundle?) {
 //    }
 
     textRegister.setOnClickListener{
-        Toast.makeText(this, "SIGN UP", Toast.LENGTH_SHORT).show()
-        /*val signup = Intent(this, SignupActivity::class.java)
-        startActivity(signup)*/
+//        Toast.makeText(this, "SIGN UP", Toast.LENGTH_SHORT).show()
+        val signup = Intent(this, SignupActivity::class.java)
+        startActivity(signup)
     }
 }
 
