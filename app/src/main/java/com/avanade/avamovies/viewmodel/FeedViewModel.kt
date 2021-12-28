@@ -14,6 +14,6 @@ class FeedViewModel: ViewModel()  {
     }
 
     fun createPost(post: Post, context: Context) {
-        repository.save(post, context)
+        repository.savePost(post, context)
     }
 }

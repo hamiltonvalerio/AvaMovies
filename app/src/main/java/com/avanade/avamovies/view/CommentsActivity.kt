@@ -1,6 +1,5 @@
 package com.avanade.avamovies.view
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +8,6 @@ import com.avanade.avamovies.R
 import com.avanade.avamovies.databinding.ActivityCommentsBinding
 import com.avanade.avamovies.model.Comment
 import com.avanade.avamovies.viewmodel.CommentsViewModel
-import com.google.firebase.FirebaseApp
 
 class CommentsActivity : AppCompatActivity() {
 
@@ -29,7 +27,7 @@ class CommentsActivity : AppCompatActivity() {
 
         commentVM = ViewModelProvider.NewInstanceFactory().create(CommentsViewModel::class.java)
 
-        binding.salvarComentario.setOnClickListener{
+        binding.salvarComentario.setOnClickListener {
             gravarComentario()
         }
     }
@@ -39,12 +37,11 @@ class CommentsActivity : AppCompatActivity() {
         val comentario = Comment(
             comentario = binding.editTextComentarios.text.toString()
         )
-
+        binding.editTextComentarios.setText("")
         commentVM.saveComment(comentario)
     }
 
     private fun setFragment(fragment: Fragment) {
-
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_fragment, fragment)
         fragmentTransaction.commit()

@@ -10,7 +10,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 class CommentsViewModel: ViewModel() {
 
     private var _comments = MutableLiveData<ArrayList<Comment>>()
-    private lateinit var firestore: FirebaseFirestore
+    private var firestore: FirebaseFirestore
 
 
     init {

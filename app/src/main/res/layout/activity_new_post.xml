@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,19 +95,15 @@
             android:padding="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.switchmaterial.SwitchMaterial
+            <CheckBox
                 android:id="@+id/new_post_has_spoiler"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:checked="true"
-                android:layoutDirection="rtl"
-                app:thumbTint="@color/white"
-                app:trackTint="@color/white"
-                android:textOn="Possui spoiler"
-                android:textOff="Sem spoiler"
-                android:text="Possui spoiler"
-                android:textColor="#6c6c6c"
-                android:layout_marginRight="10dp" />
+                android:checked="false"
+                android:layout_marginRight="10dp"
+                android:buttonTint="@color/purple_200"
+                android:textColor="#ABABAB"
+                android:text="Possui spoiler"/>
 
             <Button
                 android:id="@+id/new_post_publish"
@@ -122,7 +118,6 @@
 
         </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>
 
 

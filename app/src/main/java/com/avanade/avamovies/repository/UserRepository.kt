@@ -6,7 +6,7 @@ import com.avanade.avamovies.model.User
 import com.google.firebase.firestore.FirebaseFirestore
 
 class UserRepository {
-    private lateinit var firestore: FirebaseFirestore
+    private var firestore: FirebaseFirestore
 
     init {
         firestore = FirebaseFirestore.getInstance()

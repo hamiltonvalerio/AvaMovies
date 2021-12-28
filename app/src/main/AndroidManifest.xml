@@ -11,6 +11,7 @@
         android:theme="@style/Theme.AvaMovies" >
 
         <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name=".view.LoginActivity"
             android:exported="true">
              <intent-filter>
@@ -20,8 +21,8 @@
         </activity>
 
         <activity android:name=".view.SignupActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="Nova Conta"
+            android:exported="true"
             android:parentActivityName=".view.LoginActivity"/>
 
         <activity
@@ -33,7 +34,9 @@
 
         <activity
             android:name=".view.CommentsActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:label="Comentários"
+            android:parentActivityName=".view.FeedActivity"/>
 
         <activity
             android:name=".view.FeedActivity"

@@ -34,8 +34,6 @@ class SignupActivity: AppCompatActivity() {
 
         create.setOnClickListener {
             createAccount()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
         }
     }
 
@@ -54,9 +52,11 @@ class SignupActivity: AppCompatActivity() {
                 username.text.trim().toString(),
                 email.text.trim().toString(),
                 password.text.trim().toString()
-            );
+            )
 
             mViewModel.createUser(user, this)
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }
