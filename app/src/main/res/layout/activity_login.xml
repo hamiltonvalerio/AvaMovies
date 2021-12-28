@@ -28,10 +28,11 @@ tools:context=".view.LoginActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_activity_login"
-        android:textSize="48sp"
+        android:text="@string/avamovies"
+        android:textSize="35sp"
         android:textStyle="bold"
         android:layout_marginBottom="48dp"
+        android:textAlignment="textStart"
         android:textColor="@color/purple_700"/>
 
     <EditText
@@ -72,20 +73,21 @@ tools:context=".view.LoginActivity">
         android:textAlignment="center"
         android:layout_gravity="center"
         android:text="@string/login_activity_or" />
-    <Button
-        android:id="@+id/login_button_google"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/login_activity_login_google"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/login_button_google"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:paddingTop="16dp"-->
+<!--        android:paddingBottom="16dp"-->
+<!--        android:text="@string/login_activity_login_google"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:gravity="end">
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,6 +103,7 @@ tools:context=".view.LoginActivity">
             android:textColor="@color/purple_500"/>
 
     </LinearLayout>
+
 
 </LinearLayout>
 

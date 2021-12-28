@@ -18,6 +18,12 @@
         <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/recycler_view_post.xml" value="0.264" />
         <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1546875" />
         <entry key="..\:/Users/danny/AndroidStudioProjects/AvaMovies/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1546875" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable-anydpi/ic_action_name_comentar.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_comments.xml" value="0.5" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/fragment_comments.xml" value="0.3546875" />
+        <entry key="..\:/Users/h.valerio.filho/AndroidStudioProjects/AvaMovies/app/src/main/res/layout/rv_comments_layout.xml" value="0.3546875" />
       </map>
     </option>
   </component>

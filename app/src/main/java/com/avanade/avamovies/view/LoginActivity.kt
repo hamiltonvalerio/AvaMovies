@@ -28,7 +28,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     val editSenha = findViewById<EditText>(R.id.login_edit_text_password)
     val editEmail = findViewById<EditText>(R.id.login_edit_text_email)
     val btnLogin = findViewById<Button>(R.id.login_button_entrar)
-    val btnGoogle = findViewById<Button>(R.id.login_button_google)
+//    val btnGoogle = findViewById<Button>(R.id.login_button_google)
     val textRegister = findViewById<TextView>(R.id.login_text_view_criar_conta)
 
     btnLogin.setOnClickListener{
@@ -54,11 +54,12 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setContentView(view)
 
     setListeners()*/
-    btnGoogle.setOnClickListener{
-        Toast.makeText(this, "GOOGLE", Toast.LENGTH_SHORT).show()
-        val feed = Intent(this, NewPostActivity::class.java)
-        startActivity(feed)
-    }
+//    btnGoogle.setOnClickListener{
+//        Toast.makeText(this, "GOOGLE", Toast.LENGTH_SHORT).show()
+//        val feed = Intent(this, FeedActivity::class.java)
+//        startActivity(feed)
+//    }
+
     textRegister.setOnClickListener{
         Toast.makeText(this, "SIGN UP", Toast.LENGTH_SHORT).show()
         /*val signup = Intent(this, SignupActivity::class.java)

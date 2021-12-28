@@ -11,4 +11,7 @@
     <!-- Sobrescrita da borda de input -->
     <color name="mtrl_textinput_default_box_stroke_color">#6c6c6c</color>
 
+    <color name="black_header">#2B2730</color>
+    <color name="fonte_branca">#E8EAF6</color>
+
 </resources>

@@ -1,9 +1,11 @@
 package com.avanade.avamovies.adapter
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.avanade.avamovies.R
@@ -21,12 +23,16 @@ class PostAdapter(val postsList: List<Post>, val context: Context): RecyclerView
 
     override fun onBindViewHolder(holder: PostHolder, position: Int) {
         var post = postsList[position]
+        var liked = post.hasSpoiler
+
         holder.postTitle.text = "${post.title}"
         holder.postMovieSerieName.text = "${post.description}"
+        holder.postBtnLike.setBackgroundColor(if(liked) Color.parseColor("#BB86FC") else 0)
 
-//        holder.textViewImc.setOnClickListener {
-//            Toast.makeText(context, "${holder.textViewImc.text}", Toast.LENGTH_SHORT).show()
-//        }
+        holder.postBtnLike.setOnClickListener {
+            liked = !liked
+            holder.postBtnLike.setBackgroundColor(if(liked) Color.parseColor("#BB86FC")  else 0)
+        }
 
     }
 
@@ -35,6 +41,8 @@ class PostAdapter(val postsList: List<Post>, val context: Context): RecyclerView
     class PostHolder(view: View): RecyclerView.ViewHolder(view) {
         var postTitle: TextView = view.findViewById<TextView>(R.id.rv_post_title)
         var postMovieSerieName: TextView = view.findViewById<TextView>(R.id.rv_post_movie_serie_name)
+        var postBtnLike: TextView = view.findViewById<Button>(R.id.rv_post_curtir)
+
     }
 
 }
