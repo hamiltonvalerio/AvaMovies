@@ -88,7 +88,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Criar Conta"
-                    android:icon="@drawable/heart_icon"
                     style="?attr/materialButtonOutlinedStyle"
                     android:textAllCaps="false"
                     app:strokeColor="#444048"

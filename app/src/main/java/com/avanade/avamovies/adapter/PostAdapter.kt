@@ -29,8 +29,9 @@ class PostAdapter(val postsList: List<Post>, val context: Context): RecyclerView
         var liked = post.hasSpoiler
 
         holder.postTitle.text = "${post.title}"
-        holder.postMovieSerieName.text = "${post.description}"
+        holder.postMovieSerieName.text = "${post.movieName}"
         holder.postBtnLike.setBackgroundColor(if(liked) Color.parseColor("#BB86FC") else 0)
+        holder.postDescription.text = "${post.description}"
 
 
         holder.postBtnLike.setOnClickListener {
@@ -53,7 +54,7 @@ class PostAdapter(val postsList: List<Post>, val context: Context): RecyclerView
         var postMovieSerieName: TextView = view.findViewById<TextView>(R.id.rv_post_movie_serie_name)
         var postBtnLike: TextView = view.findViewById<Button>(R.id.rv_post_curtir)
         var postComentar: TextView = view.findViewById<Button>(R.id.rv_post_comentar)
-
+        var postDescription: TextView = view.findViewById<Button>(R.id.rv_post_description)
     }
 
 }
