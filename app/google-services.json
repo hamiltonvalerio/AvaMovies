@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080725835148",
+    "project_id": "avamovies-e7656",
+    "storage_bucket": "avamovies-e7656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080725835148:android:ae18f0d35b8f53f6d59aa9",
+        "android_client_info": {
+          "package_name": "com.avanade.avamovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080725835148-c2l7615al3fonsravsb8ge8fmgp08nq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZkIa5lIdpn1XgAhQ2hNBlw8Mg7v9EFFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080725835148-c2l7615al3fonsravsb8ge8fmgp08nq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
