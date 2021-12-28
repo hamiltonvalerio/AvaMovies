@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#BB86FC</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -11,5 +10,8 @@
 
     <!-- Sobrescrita da borda de input -->
     <color name="mtrl_textinput_default_box_stroke_color">#6c6c6c</color>
+
+    <color name="black_header">#2B2730</color>
+    <color name="fonte_branca">#E8EAF6</color>
 
 </resources>
