@@ -7,7 +7,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.avanade.avamovies.MainActivity
 import com.avanade.avamovies.R
 import com.avanade.avamovies.model.User
 import com.avanade.avamovies.viewmodel.SignupViewModel
